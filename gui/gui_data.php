@@ -10,7 +10,7 @@
 </html>
 
 <?php
-    $gif_attr=fopen("/home/onikom/Gif_Creator/main/gif_settings.txt", "w") or die("Where is the file?");
+    $gif_attr=fopen("/home/onikom/gif_360/main/gif_settings.txt", "w") or die("Where is the file?");
     $txt="delay=".$_POST["delay"]."\n";
     fwrite($gif_attr, $txt);
     if ($_POST["loop"] == "true"){
