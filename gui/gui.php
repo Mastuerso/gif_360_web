@@ -14,40 +14,55 @@
     $freeze;
     $count=0;
     foreach($lines as $newline) {
-        $newline=ltrim($newline, "delayloopplatrolcycle_gifinbetweenqualityfreezed_delay=");
+        //$newline=ltrim($newline, "delayloopplatrolcycle_gifinbetweenqualityfreezed_delayemailmailto=");
         switch($count) {
             case 0:
+                $newline=ltrim($newline, "delay=");
                 //$gif_atrr['delay']=$newline;
                 $delay=$newline;
                 //echo "Delay: ".$delay.'<br>';
                 break;
             case 1:
+                $newline=ltrim($newline, "loop=");
                 //$gif_atrr['loop']=$newline;
                 $loop=$newline;
                 //echo "Loop: ".$loop.'<br>';
                 break;
             case 2:
+                $newline=ltrim($newline, "platrolcycle_gif=");
                 //$gif_atrr['patrol_cycle']=$newline;
                 $patrol_cycle=$newline;
                 //echo "Patrol cycle: ".$patrol_cycle.'<br>';
                 break;
             case 3:
+                $newline=ltrim($newline, "inbetween=");
                 //$gif_atrr['in_between']=$newline;
                 $in_between=$newline;
                 //echo "In between: ".$in_between.'<br>';
                 break;
             case 4:
+                $newline=ltrim($newline, "quality=");
                 //$gif_atrr['quality']=$newline;
                 $quality=$newline;
                 //echo "Quality: ".$quality.'<br>';
                 break;
             case 5:
+                $newline=ltrim($newline, "freeze=");
                 $freeze=$newline;
                 break;
             case 6:
+                $newline=ltrim($newline, "d_delay=");
                 $cam_delay=$newline;
                 //echo "Cam Delay: ".$cam_delay.'<br>';
                 break;
+            case 7:
+                $newline=ltrim($newline, "email=");
+                $email=$newline;
+                //echo "Mail?".$email.'<br>';
+            case 8:
+                $newline=substr($newline, 7);
+                $mailto=$newline;
+                //echo "Mailto: ".$mailto.'<br>';
         }        
         $count++;        
     }
@@ -73,10 +88,10 @@
             <?php
                 if ($freeze==0){
                     echo '<input type="checkbox" name="freeze" value="true"><br>';
-                    echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Cam delay(ms)":><br>';
                 } else {
                     echo '<input type="checkbox" name="freeze" value="true" checked><br>';                    
                 }
+                echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Cam delay(ms)":><br>';
             ?>
             <!--Delay: -->
             <input type="text" name="delay" value="<?=$delay?>" placeholder="Img delay(cs)":><br>
@@ -105,6 +120,15 @@
                 } else
                     echo '<input type="checkbox" name="patrol_cycle" value="true" checked><br>';
                 
+            ?>
+            Email:
+            <?php
+                if ($email==0){
+                    echo '<input type="checkbox" name="email" value="true"><br>';                    
+                } else {
+                    echo '<input type="checkbox" name="email" value="true" checked><br>';                    
+                }
+                echo '<input type="text" name="mailto" value="'.$mailto.'" placeholder="username@example.com":><br>';
             ?>
             <input type="submit" value="Ok">
         </form>

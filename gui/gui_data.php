@@ -42,10 +42,20 @@
     }
     fwrite($gif_attr, $txt);
 
-    $txt="d_delay=".$_POST["cam_delay"]."\n.\n";
-    fwrite($gif_attr, $txt);   
+    $txt="d_delay=".$_POST["cam_delay"]."\n";
+    fwrite($gif_attr, $txt);
+
+    if ($_POST["email"] == true){
+        $txt="email=1\n";
+    } else {
+        $txt="email=0\n";
+    }
+    fwrite($gif_attr, $txt);
+
+    $txt="mailto=".$_POST["mailto"]."\n.\n";
+    fwrite($gif_attr, $txt);
   
     fclose($gif_attr);
-    header("location: http://localhost/gui.php");
+    header("location: http://localhost/gif_360_web/gui/gui.php");
     exit();
 ?>
