@@ -1,6 +1,5 @@
 <?php
-
-    $file="/home/onikom/Gif_Creator/main/gif_settings.txt";
+    $file="/home/onikom/gif_360/main/gif_settings.txt";
 
     $document=file_get_contents($file);
 
@@ -35,7 +34,7 @@
                 //echo "Patrol cycle: ".$patrol_cycle.'<br>';
                 break;
             case 3:
-                $newline=ltrim($newline, "inbetween=");
+                $newline=ltrim($newline, "in_between=");
                 //$gif_atrr['in_between']=$newline;
                 $in_between=$newline;
                 //echo "In between: ".$in_between.'<br>';
