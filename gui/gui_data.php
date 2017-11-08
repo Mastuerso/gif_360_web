@@ -10,6 +10,7 @@
 </html>
 
 <?php
+    #Where is the file msg can be fixed by changing permisions on the txt file
     $gif_attr=fopen("/home/onikom/gif_360/main/gif_settings.txt", "w") or die("Where is the file?");
     $txt="delay=".$_POST["delay"]."\n";
     fwrite($gif_attr, $txt);
