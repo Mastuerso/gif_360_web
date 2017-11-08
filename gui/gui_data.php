@@ -1,5 +1,5 @@
 <?php
-    #Where is the file msg can be fixed by changing permisions on the txt file
+    #Where is the file msg can be fixed by changing permisions on the txt file    
     $gif_attr=fopen("/home/onikom/gif_360/main/gif_settings.txt", "w") or die("Where is the file?");
     $txt="delay=".$_POST["delay"]."\n";
     fwrite($gif_attr, $txt);
@@ -42,7 +42,29 @@
     }
     fwrite($gif_attr, $txt);
 
-    $txt="mailto=".$_POST["mailto"]."\n.\n";
+    $txt="mailto=".$_POST["mailto"]."\n";
+    fwrite($gif_attr, $txt);
+
+    if ($_POST["watermark"] == true){
+        $txt="watermark=1\n";
+    } else {
+        $txt="watermark=0\n";
+    }
+    fwrite($gif_attr, $txt);
+
+    if ($_POST["wmark"] == "") {
+        $txt="wmark=".$_POST["oldwmark"]."\n";
+    } else {
+        $txt="wmark=".$_POST["wmark"]."\n";
+    }
+    $txt=str_replace("file://", "", $txt);
+    fwrite($gif_attr, $txt);
+
+    if ($_POST["facebook"] == true){
+        $txt="fb_post=1\n.\n";
+    } else {
+        $txt="fb_post=0\n.\n";
+    }
     fwrite($gif_attr, $txt);
   
     fclose($gif_attr);

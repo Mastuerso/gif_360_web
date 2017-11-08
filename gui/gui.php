@@ -58,21 +58,30 @@
                 $newline=ltrim($newline, "email=");
                 $email=$newline;
                 //echo "Mail?".$email.'<br>';
+                break;
             case 8:
                 $newline=substr($newline, 7);
                 $mailto=$newline;
                 //echo "Mailto: ".$mailto.'<br>';
+                break;
+            case 9:
+                //watermark
+                $newline=ltrim($newline, "watermark=");
+                $watermark=$newline;
+                break;
+            case 10:
+                //watermark
+                $newline=substr($newline, 6);
+                $wmark=$newline;
+                break;
+            case 11:
+                //facebook post
+                $newline=ltrim($newline, "fb_post=");
+                $fb_post=$newline;
+                break;
         }        
         $count++;        
     }
-
-    /*
-    echo "Delay: ".$gif_atrr['delay'].'<br>';
-    echo "Loop: ".$gif_atrr['loop'].'<br>';
-    echo "Patrol cycle: ".$gif_atrr['patrol_cycle'].'<br>';
-    echo "In-betweens: ".$gif_atrr['in_between'].'<br>';
-    echo "Quality: ".$gif_atrr['quality'].'<br>';
-    */
 ?>
 
 <html>
@@ -81,7 +90,7 @@
         <link rel="stylesheet" href="stylesheet.css" >
     </head>
     <body>
-        <h1>III6T</h1>
+        <h1>Gif360</h1>
         <form action="gui_data.php" method="post">
             Freeze: 
             <?php
@@ -128,6 +137,27 @@
                     echo '<input type="checkbox" name="email" value="true" checked><br>';                    
                 }
                 echo '<input type="text" name="mailto" value="'.$mailto.'" placeholder="username@example.com":><br>';
+            ?>
+            Watermark
+            <?php
+                if ($watermark==0){
+                    echo '<input type="checkbox" name="watermark" value="true"><br>';                    
+                } else {
+                    echo '<input type="checkbox" name="watermark" value="true" checked><br>';
+                }
+                echo 'Image: '.$wmark.'<br>';
+                if ($wmark!="") {
+                    echo '<input type="hidden" name="oldwmark" value="'.$wmark.'":>';
+                }
+                echo '<input type="text" name="wmark" value="" placeholder="Drop new image here":><br>';
+            ?>
+            FB Post
+            <?php
+                if ($fb_post==0){
+                    echo '<input type="checkbox" name="facebook" value="true"><br>';                    
+                } else {
+                    echo '<input type="checkbox" name="facebook" value="true" checked><br>';                    
+                }
             ?>
             <input type="submit" value="Ok">
         </form>
