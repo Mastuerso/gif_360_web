@@ -1,14 +1,3 @@
-
-<html>
-    <body>
-        Delay: <?php echo $_POST["delay"]; ?><br>
-        Quality: <?php echo $_POST["quality"]; ?><br>
-        Loop: <?php echo $_POST["loop"]; ?><br>
-        In betweens: <?php echo $_POST["in_between"]; ?><br>
-        Patrol Cycle: <?php echo $_POST["patrol_cycle"]; ?><br>
-    </body>
-</html>
-
 <?php
     #Where is the file msg can be fixed by changing permisions on the txt file
     $gif_attr=fopen("/home/onikom/gif_360/main/gif_settings.txt", "w") or die("Where is the file?");
