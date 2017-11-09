@@ -14,7 +14,7 @@ $mail = new PHPMailer(true);// Passing `true` enables exceptions
 $username='soporte.gif360@gmail.com';
 $pswd=base64_decode('WjJsbU16WXc=');
 $recipient='antonio.credoz@gmail.com';
-$m_attch='/home/onikom/Pictures/8nov-16:27.gif';
+$m_attch='/home/onikom/Pictures/nov08-1926.gif';
 try {
     //Server settings
     $mail->SMTPDebug = 2;                                   // Enable verbose debug output
@@ -36,7 +36,7 @@ try {
 
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    $mail->addAttachment($m_attch, 'wmark.png');    // Optional name
+    $mail->addAttachment($m_attch, 'gif360.gif');    // Optional name
 
     //Content
     //$mail->isHTML(true);                                  // Set email format to HTML
