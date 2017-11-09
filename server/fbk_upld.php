@@ -56,7 +56,8 @@ try {
 
 
 $me = $response->getGraphUser();
-echo 'Logged in as ' . $me->getName();
+//echo 'Logged in as ' . $me->getName();
+echo $message_gif.' posted on fbk';
 echo "\r\n";
 
 ?>
