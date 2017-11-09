@@ -14,7 +14,8 @@ $mail = new PHPMailer(true);// Passing `true` enables exceptions
 $username='soporte.gif360@gmail.com';
 $pswd=base64_decode('WjJsbU16WXc=');
 $recipient='antonio.credoz@gmail.com';
-$m_attch='/home/onikom/Pictures/nov08-1926.gif';
+$m_attch='/home/onikom/Pictures/nov09-1144.gif';
+
 try {
     //Server settings
     $mail->SMTPDebug = 2;                                   // Enable verbose debug output

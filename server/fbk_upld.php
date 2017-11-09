@@ -1,11 +1,12 @@
 #!/usr/bin/php
 <?php    
-require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
+//require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
+require_once '/var/www/html/vendor/autoload.php'; // change path as needed
 
 $access_token="EAAcZCKRY8rLwBAF7wWZCLnxMiIDZBBBYQZBxxLDyvF6CzHpELll7gm72YfXQw1HgfuUuNizxles5ZAuTo4x5uVqksB6EJVnZAstL5laZBzV80k4evx923cLfFtjMa7ZBHOcH6EYLdD9L5dlw2hCcFRWyvY7Yqhz9jv4kXagZC53DpjQZDZD";
 
-$link_gif="http://www.onikom.com.mx/gif360/skeleton_dance.gif";
-$message_gif="skeleton_dance";
+$link_gif="http://www.onikom.com.mx/gif360/nov09-1144.gif";
+$message_gif="nov09-1144";
 
 $fb = new \Facebook\Facebook([
     'app_id' => '2039770536258748',
