@@ -13,8 +13,8 @@ require '/var/www/html/vendor/autoload.php';
 $mail = new PHPMailer(true);// Passing `true` enables exceptions
 $username='soporte.gif360@gmail.com';
 $pswd=base64_decode('WjJsbU16WXc=');
-$m_attch='/home/onikom/Pictures/celticMark.png';
 $recipient='antonio.credoz@gmail.com';
+$m_attch='/home/onikom/Pictures/8nov-16:27.gif';
 try {
     //Server settings
     $mail->SMTPDebug = 2;                                   // Enable verbose debug output

@@ -8,5 +8,5 @@ message_arg="8s/.*/\$message_gif=\"${gif_name}\";/"
 #echo $message_arg
 #echo $link_arg
 
-sed -i $message_arg fbk_upld.php
 sed -i $link_arg fbk_upld.php
+sed -i $message_arg fbk_upld.php
