@@ -99,10 +99,10 @@
                 } else {
                     echo '<input type="checkbox" name="freeze" value="true" checked><br>';                    
                 }
-                echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Cam delay(ms)":><br>';
+                echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
             ?>
             <!--Delay: -->
-            <input type="text" name="delay" value="<?=$delay?>" placeholder="Img delay(cs)":><br>
+            <input type="text" name="delay" value="<?=$delay?>" placeholder="FPS":><br>
             <!--Quality(%): -->
             <input type="text" name="quality" value="<?=$quality?>" placeholder=Quality(%):><br>
             Loop the gif: 
