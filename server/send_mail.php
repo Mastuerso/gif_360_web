@@ -13,8 +13,8 @@ require '/var/www/html/vendor/autoload.php';
 $mail = new PHPMailer(true);// Passing `true` enables exceptions
 $username='soporte.gif360@gmail.com';
 $pswd=base64_decode('WjJsbU16WXc=');
-$recipient='antonio.credoz@gmail.com';
-$m_attch='/home/onikom/Pictures/nov09-1144.gif';
+$recipient='rodrigo.mmr1991@gmail.com';
+$m_attch='/home/onikom/Pictures/nov13-1407.mp4';
 
 try {
     //Server settings
@@ -37,7 +37,7 @@ try {
 
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    $mail->addAttachment($m_attch, 'gif360.gif');    // Optional name
+    $mail->addAttachment($m_attch, 'gif360');    // Optional name
 
     //Content
     //$mail->isHTML(true);                                  // Set email format to HTML

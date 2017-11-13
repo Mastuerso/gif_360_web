@@ -105,30 +105,32 @@
             <input type="text" name="delay" value="<?=$delay?>" placeholder="FPS":><br>
             <!--Quality(%): -->
             <input type="text" name="quality" value="<?=$quality?>" placeholder=Quality(%):><br>
+            <!--
             Loop the gif: 
             <?php
-                if ($loop==0){
-                    echo '<input type="checkbox" name="loop" value="true" checked><br>';
-                } else
-                    echo '<input type="checkbox" name="loop" value="true"><br>';
+                #if ($loop==0){
+                #    echo '<input type="checkbox" name="loop" value="true" checked><br>';
+                #} else
+                #    echo '<input type="checkbox" name="loop" value="true"><br>';
                 
             ?>
             Create in betweens: 
             <?php
-                if ($in_between==0){
-                    echo '<input type="checkbox" name="in_between" value="true"><br>';
-                } else
-                    echo '<input type="checkbox" name="in_between" value="true" checked><br>';
+                #if ($in_between==0){
+                #    echo '<input type="checkbox" name="in_between" value="true"><br>';
+                #} else
+                #    echo '<input type="checkbox" name="in_between" value="true" checked><br>';
                 
             ?>
             Patrol cycle gif: 
             <?php
-                if ($patrol_cycle==0){
-                    echo '<input type="checkbox" name="patrol_cycle" value="true"><br>';
-                } else
-                    echo '<input type="checkbox" name="patrol_cycle" value="true" checked><br>';
+                #if ($patrol_cycle==0){
+                #    echo '<input type="checkbox" name="patrol_cycle" value="true"><br>';
+                #} else
+                #    echo '<input type="checkbox" name="patrol_cycle" value="true" checked><br>';
                 
             ?>
+            -->
             Email:
             <?php
                 if ($email==0){
