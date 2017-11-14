@@ -4,8 +4,8 @@
 require_once '/var/www/html/vendor/autoload.php'; // change path as needed
 
 $access_token="EAAcZCKRY8rLwBAF7wWZCLnxMiIDZBBBYQZBxxLDyvF6CzHpELll7gm72YfXQw1HgfuUuNizxles5ZAuTo4x5uVqksB6EJVnZAstL5laZBzV80k4evx923cLfFtjMa7ZBHOcH6EYLdD9L5dlw2hCcFRWyvY7Yqhz9jv4kXagZC53DpjQZDZD";
-
-$link_gif="http://www.onikom.com.mx/gif360/nov09-1144.gif";
+$link_gif="http://www.onikom.com.mx/gif360/nov14-1556.mp4";
+$message_gif="nov14-1556.mp4";
 $message_gif="nov09-1144";
 
 $fb = new \Facebook\Facebook([
