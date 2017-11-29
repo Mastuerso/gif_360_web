@@ -13,8 +13,118 @@ require '/var/www/html/vendor/autoload.php';
 $mail = new PHPMailer(true);// Passing `true` enables exceptions
 $username='soporte.gif360@gmail.com';
 $pswd=base64_decode('WjJsbU16WXc=');
-$recipient='rodrigo.mmr1991@gmail.com';
-$m_attch='/home/onikom/Pictures/nov14-1556.mp4';
+$recipient='antonio.credoz@gmail.com';
+$m_attch='/home/onikom/Pictures/nov29_1717_48.mp4';
+$v_url='http://socialevent.mx/gif/uploads/360/nov29_1717_48.mp4';
+$img_url='http://socialevent.mx/gif/uploads/360/nov29_1717_48.gif';
+
+$email_msg = <<< SHACA
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Black Ecco Group | Comunitarian Private Equety</title>
+</head>
+<body style="font-family:Verdana;">
+<center>
+<!--Comienza heading-->
+<table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff">
+<tbody>
+<tr>
+<td align="center" valign="top" style="color:#b5b5b5;padding:3px;font-family:Verdana;">
+<br>Si no puedes ver este anuncio importante, <a href="NL-BE-28112017.html" style="color:#007ad1;">sigue este enlace.</a>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td style="background-color:#fff;padding:4px;" align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logobe.png" width="180" alt="BlackEcco_Group">
+</td>
+</tr>
+</tbody>
+</table>
+<!--Content-->
+<table cellspacing="0" cellpadding="0" width="600">
+<tbody>
+<tr>
+<td>
+<img src="http://socialevent.mx/gif/uploads/360/images/banner.png">
+</td>
+</tr>
+<tr>
+<td>
+<video width="600" height="400" autoplay loop>
+<source src="$v_url" type="video/mp4">
+<a href="$v_url">
+<img border="0" src="$img_url" width="600" height="400">
+</a>
+</video>
+</td>
+</tr>
+</tbody>
+</table>
+<!--Button-->
+<table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">
+<tbody>
+<tr style="height: 30px">
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td style="background-color: #008cff; border-radius: 10px; width: 300px; height: 60px; color: #fff; font-family: Verdana; text-align: center;font-size: 30px;"><a href="{$v_url}" target="_blank" style="text-decoration: none; color: #fff;">DESCARGAR</a></td><td></td>
+</tr>
+<tr style="height: 30px">
+<td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+<hr style="color: #ccc; width: 50%;">
+<table cellspacing="0" cellpadding="0" width="600">
+<tbody>
+<tr>
+<td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logocp.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logomv.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logort.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logoot.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logose.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logola.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logolc.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logohc.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logolco.png"></td><td align="center"><img src="http://socialevent.mx/gif/uploads/360/images/logolsl.png"></td>
+</tr>
+</tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="600">
+<td style="font-size:12px;color:#fff;font-family:Verdana ;text-align:center;padding:6px; padding-top: 50px">
+<a href="https://twitter.com/BlackEcco_Group?lang=es" target="_blank" style="text-decoration:none;"><img src="http://socialevent.mx/gif/uploads/360/images/txt.png"/></a>
+<a href="https://www.instagram.com/blackecco_group/?hl=es-la" target="_blank" style="text-decoration:none;"><img src="http://socialevent.mx/gif/uploads/360/images/sg.png"/></a>
+<a href="https://www.facebook.com/BlackEcco/" target="_blank" style="text-decoration:none;"><img src="http://socialevent.mx/gif/uploads/360/images/fb.png"/></a>
+<a href="https://www.linkedin.com/company/10242065/admin/updates/" target="_blank" style="text-decoration:none;"><img src="http://socialevent.mx/gif/uploads/360/images/li.png"/></a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<h1><a href="" style="font-family:Verdana; text-decoration:none; color: #008cff;">www.blackeccogroup.com</a></h1>
+</td>
+</tr>
+</table>
+<!--Footer terminos y condiciones-->
+<table cellspacing="0" cellpadding="4" width="600" bgcolor="#ffffff">
+<tbody>
+<tr>
+<td width="496" style="background-color:#fff;font-size:9px;color:#666;font-family:Verdana;text-align:justify;">
+<br>
+<p align="justify">AVISO DE PRIVACIDAD: Black Ecco SAPI de CV con domicilio en Cerrada Corina 18, Coyoacán, C.P. 04100, es responsable del uso, protección y confidencialidad de los datos personales que nos proporciona. La información personal que nos proporciona será utilizada para los siguientes fines: Proveerle servicios y productos que ha solicitado, conocer su perfil de candidato a puestos de trabajo, contactarlo, corroborar datos que proporcione en el cv. Para mayor información puede encontrar nuestro Aviso de Privacidad en nuestra página web.</p>
+<br>
+<br>
+<center>
+<a href="http://movil-evolution.com.mx/"><img src="http://socialevent.mx/gif/uploads/360/images/" height="60" alt="http://socialevent.mx/gif/uploads/360/images/logobe.png"></a>
+</center>
+<br>
+<center style="color:#6a6a6a;">Black Ecco Gruop, Derechos reservados 2017</center>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+</body>
+</html>
+SHACA;
 
 try {
     //Server settings
@@ -37,171 +147,17 @@ try {
 
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    $mail->addAttachment($m_attch);    // Optional name
+    //$mail->addAttachment($m_attch);    // Optional name
     //$mail->addAttachment($m_attch, 'gif360');    // Optional name
 
     //Content
-    $mail->CharSet = 'UTF-8';    
+    $mail->CharSet = 'UTF-8';
     //$mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Gif360';
-    
-    $mail->Body    = <<<'EOD'
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Movil Evolution | Evolution is not a force but a process. Not a cause but a law.
-    </title>
-    </head>
-    <body>
-    <center>
-    <!--Comienza heading-->
-    <table cellspacing="0" cellpadding="0" width="590" bgcolor="#fff">
-    <tbody>
-    <tr>
-    <td align="center" valign="top" style="color: #b5b5b5; padding: 3px;"><br>Si no puedes ver este anuncio importante, <a href="http://www.w-wings.mx/NewsLetter/Semana-1.html" style="color: #007ad1;">sigue este enlace.</a><br><br>
-    </td>
-    </tr>
-    <tr><td style="background-color: #000" align="center"><img src="images/logo_BE-2.png" width="250" height="auto"></td></tr>
-    <tr><td style="background-color: #000;font-size: 18px; color: #ff7300; font-family: Arial; text-align: center; padding: 3px;" align="center">Evolution is not a force but a process.<br>Not a cause but a law.<br></td></tr>
-    </tbody>
-    </table>
-    <!--Logos-->
-    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#fff">
-    <tbody>
-    <tr>
-    <td width="300" align="center"><img src="images/logos_02.png" width="200" height="auto"></td><td width="300" align="center"><img src="images/logos_04.png" width="200" height="auto"></td>
-    </tr>
-    </tbody>
-    <!--Content-->
-    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">
-    <tbody>
-    <tr>
-    <td width="300" align="center" style="font-size: 14px; color: #fff; font-family: Arial; text-align: center;"><h1><strong>¡Agradecemos tu participación en nuestro GIF 360°!</strong></h1></p>
-    
-    <p>Ahora tienes un recuerdo memorable de tu participación en la Copa de Golf Peyrelongue.</p>
-    
-    <p>Así como este photo opportunity, a través de tecnología y creatividad, desarrollamos experiencias a la medida que cautivan por su originalidad y eficiente impacto en el consumidor.</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>    
-    <!--Content2-->
-    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">
-    <tbody>
-    <tr>
-    <td width="300" align="center" style="font-size: 14px; color: #fff; font-family: Arial; text-align: center;"><p>En esta nueva era, donde los asiduos cambios tecnológicos afectan el comportamiento de los consumidores hacia las marcas, las estrategias de marketing BTL (below the line) se han convertido en el modo principal de conectar a la audiencia con una marca.</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">
-    <tr ><td align="center"><img src="images/sevices.png" width="450" height="auto"></td></tr>
-    </table>
-    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">
-    <tr><td style="font-size: 14px; color: #fff; font-family: Arial; text-align: center;">Conoce nuestros alcances, proyectos e innovaciones. <br>Visita nuesta página  web y/o redes sociales:</td></tr>
-    <tr><td style="font-size: 14px; color: #fff; font-family: Arial; text-align: center; padding: 6px;">
-    <a href="aquíva el link de toyutuve"><img src="images/SM-1.png" width="30" height="30" style="padding: 3px;"></a><a href="aquíva el link de vimeo"><img src="images/SM-2.png" width="30" height="30" style="padding: 3px;"></a><a href="aquíva el link de facebook"><img src="images/SM-3.png" width="30" height="30" style="padding: 3px;"></a><a href="aquíva el link de twitter"><img src="images/SM-4.png" width="30" height="30" style="padding: 3px;"></a></td></tr>
-    </table>
-    <!--Footer terminos y condiciones-->
-    <table cellspacing="0" cellpadding="4" width="600" bgcolor="#fff">
-    <tbody>
-    <tr>
-    <td width="496" style="background-color: #030000;font-size: 9px; color: #fff; font-family: Arial; text-align: justify;">
-    <p align="center">¿Deseas dejar de recibir nuestros comunicados?, <a href="" style="color: #ff7300">sigue este enlace.</a></p>
-    <br>
-    <p align="center">El tratamiento de los datos personales en Movil evolution se realiza en conformidad con el Aviso de Privacidad Integral que se encuentra disponible en la página de Internet <a href="http://movil-evolution.com.mx/" style="color: #ff7300">movil-evolution.com.mx</a> en la sección “PolItica de privacidad”.</p>
-    <br>
-    <br>
-    <center><a href="http://movil-evolution.com.mx/"><img src="images/logo_BE-2.png" width="auto" height="60"></a></center>
-    <br>
-    <center>Movil Evolution SA de CV, Derechos reservados 2017</center>
-    <br>
-    </td></tr>
-    </tbody>
-    </table>
-    </center>
-    </body>
-    </html>
-    EOD;
-    
-    //$mail->Body    = '<b>!</b>Este correo contiene un  <b>Gif360!</b>';
-    //$mail->Body  = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
-    //$mail->Body .= '<html xmlns="http://www.w3.org/1999/xhtml">';
-    //$mail->Body .= '<head>';
-    //$mail->Body .= '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
-    //$mail->Body .= '<title>Movil Evolution | Evolution is not a force but a process. Not a cause but a law.';
-    //$mail->Body .= '</title>';
-    //$mail->Body .= '</head>';
-    //$mail->Body .= '<body>';
-    //$mail->Body .= '<center>';
-    //$mail->Body .= '<!--Comienza heading-->';
-    //$mail->Body .= '<table cellspacing="0" cellpadding="0" width="590" bgcolor="#fff">';
-    //$mail->Body .= '<tbody>';
-    //$mail->Body .= '<tr>';
-    //$mail->Body .= '<td align="center" valign="top" style="color: #b5b5b5; padding: 3px;"><br>Si no puedes ver este anuncio importante, <a href="http://www.w-wings.mx/NewsLetter/Semana-1.html" style="color: #007ad1;">sigue este enlace.</a><br><br>';
-    //$mail->Body .= '</td>';
-    //$mail->Body .= '</tr>';
-    //$mail->Body .= '<tr><td style="background-color: #000" align="center"><img src="images/logo_BE-2.png" width="250" height="auto"></td></tr>';
-    //$mail->Body .= '<tr><td style="background-color: #000;font-size: 18px; color: #ff7300; font-family: Arial; text-align: center; padding: 3px;" align="center">Evolution is not a force but a process.<br>Not a cause but a law.<br></td></tr>';
-    //$mail->Body .= '</tbody>';
-    //$mail->Body .= '</table>';
-    //#<!--Logos-->
-    //$mail->Body .= '<table cellspacing="0" cellpadding="0" width="600" bgcolor="#fff">';
-    //$mail->Body .= '<tbody>';
-    //$mail->Body .= '<tr>';
-    //$mail->Body .= '<td width="300" align="center"><img src="images/logos_02.png" width="200" height="auto"></td><td width="300" align="center"><img src="images/logos_04.png" width="200" height="auto"></td>';
-    //$mail->Body .= '</tr>';
-    //$mail->Body .= '</tbody>';
-    //#<!--Content-->
-    //$mail->Body .= '<table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">';
-    //$mail->Body .= '<tbody><tr>';
-    //$mail->Body .= '<td width="300" align="center" style="font-size: 14px; color: #fff; font-family: Arial; text-align: center;"><h1><strong>¡Agradecemos tu participación en nuestro GIF 360°!</strong></h1></p>';
-    //$mail->Body .= '<p>Ahora tienes un recuerdo memorable de tu participación en la Copa de Golf Peyrelongue.</p>';
-    //$mail->Body .= '<p>Así como este photo opportunity, a través de tecnología y creatividad, desarrollamos experiencias a la medida que cautivan por su originalidad y eficiente impacto en el consumidor.</p>';
-    //$mail->Body .= '</td>';
-    //$mail->Body .= '</tr>';
-    //$mail->Body .= '</tbody>';
-    //$mail->Body .= '</table>';
-    //#<!--Video-->
-    //#$mail->Body .= '<table cellspacing="0" cellpadding="0" width="600" height="480" bgcolor="#ccc">';
-    //#$mail->Body .= '<tbody>';
-    //#$mail->Body .= '<tr>';
-    //#$mail->Body .= '<td width="300" align="center"></td>';
-    //#$mail->Body .= '</tr>';
-    //#$mail->Body .= '</tbody>';
-    //#$mail->Body .= '</table>';
-    //#<!--Content2-->
-    //$mail->Body .= '<table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">';
-    //$mail->Body .= '<tbody>';
-    //$mail->Body .= '<tr>';
-    //$mail->Body .= '<td width="300" align="center" style="font-size: 14px; color: #fff; font-family: Arial; text-align: center;"><p>En esta nueva era, donde los asiduos cambios tecnológicos afectan el comportamiento de los consumidores hacia las marcas, las estrategias de marketing BTL (below the line) se han convertido en el modo principal de conectar a la audiencia con una marca.</p>';
-    //$mail->Body .= '</td>';
-    //$mail->Body .= '</tr>';
-    //$mail->Body .= '</tbody>';
-    //$mail->Body .= '</table>';
-    //$mail->Body .= '<table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">';
-    //$mail->Body .= '<tr ><td align="center"><img src="images/sevices.png" width="450" height="auto"></td></tr>';
-    //$mail->Body .= '</table>';
-    //$mail->Body .= '<table cellspacing="0" cellpadding="0" width="600" bgcolor="#000">';
-    //$mail->Body .= '<tr><td style="font-size: 14px; color: #fff; font-family: Arial; text-align: center;">Conoce nuestros alcances, proyectos e innovaciones. <br>Visita nuesta página  web y/o redes sociales:</td></tr>';
-    //$mail->Body .= '<tr><td style="font-size: 14px; color: #fff; font-family: Arial; text-align: center; padding: 6px;">';
-    //$mail->Body .= '<a href="aquíva el link de toyutuve"><img src="images/SM-1.png" width="30" height="30" style="padding: 3px;"></a><a href="aquíva el link de vimeo"><img src="images/SM-2.png" width="30" height="30" style="padding: 3px;"></a><a href="aquíva el link de facebook"><img src="images/SM-3.png" width="30" height="30" style="padding: 3px;"></a><a href="aquíva el link de twitter"><img src="images/SM-4.png" width="30" height="30" style="padding: 3px;"></a></td></tr>';
-    //$mail->Body .= '</table>';
-    //#<!--Footer terminos y condiciones-->
-    //$mail->Body .= '<table cellspacing="0" cellpadding="4" width="600" bgcolor="#fff">';
-    //$mail->Body .= '<tbody>';
-    //$mail->Body .= '<tr>';
-    //$mail->Body .= '<td width="496" style="background-color: #030000;font-size: 9px; color: #fff; font-family: Arial; text-align: justify;">';
-    //$mail->Body .= '<p align="center">¿Deseas dejar de recibir nuestros comunicados?, <a href="" style="color: #ff7300">sigue este enlace.</a></p>';
-    //$mail->Body .= '<br>';
-    //$mail->Body .= '<p align="center">El tratamiento de los datos personales en Movil evolution se realiza en conformidad con el Aviso de Privacidad Integral que se encuentra disponible en la página de Internet <a href="http://movil-evolution.com.mx/" style="color: #ff7300">movil-evolution.com.mx</a> en la sección “PolItica de privacidad”.</p>';
-    //$mail->Body .= '<br>';
-    //$mail->Body .= '<br>';
-    //$mail->Body .= '<center><a href="http://movil-evolution.com.mx/"><img src="images/logo_BE-2.png" width="auto" height="60"></a></center>';
-    //$mail->Body .= '<br>';
-    //$mail->Body .= '<center>Movil Evolution SA de CV, Derechos reservados 2017</center>';
-    //$mail->Body .= '<br></td></tr></tbody></table></center></body></html>';
+
+    $mail->Body = $email_msg;
+
+
     $mail->isHTML(true);
     //$mail->AltBody = '!Este correo contiene un Gif360!';
 
