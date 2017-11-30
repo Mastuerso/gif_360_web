@@ -1,19 +1,21 @@
 #!/usr/bin/php
-<?php    
+<?php
 //require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
 require_once '/var/www/html/vendor/autoload.php'; // change path as needed
 
-$access_token="EAAcZCKRY8rLwBAF7wWZCLnxMiIDZBBBYQZBxxLDyvF6CzHpELll7gm72YfXQw1HgfuUuNizxles5ZAuTo4x5uVqksB6EJVnZAstL5laZBzV80k4evx923cLfFtjMa7ZBHOcH6EYLdD9L5dlw2hCcFRWyvY7Yqhz9jv4kXagZC53DpjQZDZD";
-$link_gif="http://www.onikom.com.mx/gif360/nov14-1556.mp4";
-$message_gif="nov14-1556.mp4";
-$message_gif="nov09-1144";
+
+$link_gif="http://socialevent.mx/gif/uploads/360/nov29_1848_41.mp4";
+$message_gif="nov29_1848_41.mp4";
+
+$access_token="EAAcZCKRY8rLwBAJXhhtiamyLsTBNUAdWyhO4v7wwCZC9tE7OTYBWHjgP77ijwFqcyJxiOEQbMbgOFqMVToNRiwwhCu7d8SqueGQZCrnwnX6cHLphQBfG2OsQokeZAEeUyh4BniimoQW2d2joFuGx9nZCEfxGXC3GsNQ57Q4Uj9zyDWJ45rZCZCWUPvZBMJ8xhtUZD";
+#$access_token="EAAcZCKRY8rLwBAF7wWZCLnxMiIDZBBBYQZBxxLDyvF6CzHpELll7gm72YfXQw1HgfuUuNizxles5ZAuTo4x5uVqksB6EJVnZAstL5laZBzV80k4evx923cLfFtjMa7ZBHOcH6EYLdD9L5dlw2hCcFRWyvY7Yqhz9jv4kXagZC53DpjQZDZD";
 
 $fb = new \Facebook\Facebook([
     'app_id' => '2039770536258748',
     'app_secret' => '05d78cbac9249efb43938f6e886b0251',
     'default_graph_version' => 'v2.10',
     //'default_access_token' => '{access-token}', // optional
-]);    
+]);
 
 // Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
 //   $helper = $fb->getRedirectLoginHelper();

@@ -79,8 +79,8 @@
                 $newline=ltrim($newline, "fb_post=");
                 $fb_post=$newline;
                 break;
-        }        
-        $count++;        
+        }
+        $count++;
     }
 ?>
 
@@ -88,77 +88,79 @@
     <head>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="stylesheet.css" >
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     </head>
     <body>
-        <h1>Gif360</h1>
         <form action="gui_data.php" method="post">
-            Freeze: 
+            Freeze:
             <?php
                 if ($freeze==0){
                     echo '<input type="checkbox" name="freeze" value="true"><br>';
+                    echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
                 } else {
-                    echo '<input type="checkbox" name="freeze" value="true" checked><br>';                    
+                    echo '<input type="checkbox" name="freeze" value="true" checked><br>';
                 }
-                echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
+                //echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
             ?>
             <!--Delay: -->
             <input type="text" name="delay" value="<?=$delay?>" placeholder="FPS":><br>
             <!--Quality(%): -->
             <input type="text" name="quality" value="<?=$quality?>" placeholder=Quality(%):><br>
             <!--
-            Loop the gif: 
+            Loop the gif:
             <?php
                 #if ($loop==0){
                 #    echo '<input type="checkbox" name="loop" value="true" checked><br>';
                 #} else
                 #    echo '<input type="checkbox" name="loop" value="true"><br>';
-                
+
             ?>
-            Create in betweens: 
+            Create in betweens:
             <?php
                 #if ($in_between==0){
                 #    echo '<input type="checkbox" name="in_between" value="true"><br>';
                 #} else
                 #    echo '<input type="checkbox" name="in_between" value="true" checked><br>';
-                
+
             ?>
-            Patrol cycle gif: 
+            Patrol cycle gif:
             <?php
                 #if ($patrol_cycle==0){
                 #    echo '<input type="checkbox" name="patrol_cycle" value="true"><br>';
                 #} else
                 #    echo '<input type="checkbox" name="patrol_cycle" value="true" checked><br>';
-                
+
             ?>
             -->
             Email:
             <?php
                 if ($email==0){
-                    echo '<input type="checkbox" name="email" value="true"><br>';                    
+                    echo '<input type="checkbox" name="email" value="true"><br>';
                 } else {
-                    echo '<input type="checkbox" name="email" value="true" checked><br>';                    
+                    echo '<input type="checkbox" name="email" value="true" checked><br>';
                 }
                 echo '<input type="text" name="mailto" value="'.$mailto.'" placeholder="username@example.com":><br>';
             ?>
             Watermark
             <?php
                 if ($watermark==0){
-                    echo '<input type="checkbox" name="watermark" value="true"><br>';                    
+                    echo '<input type="checkbox" name="watermark" value="true"><br>';
                 } else {
                     echo '<input type="checkbox" name="watermark" value="true" checked><br>';
+                    echo '<input type="text" name="wmark" value="" placeholder="Drop new image here":><br>';
                 }
-                echo 'Image: '.$wmark.'<br>';
+                //echo 'Image: '.$wmark.'<br>';
                 if ($wmark!="") {
                     echo '<input type="hidden" name="oldwmark" value="'.$wmark.'":>';
                 }
-                echo '<input type="text" name="wmark" value="" placeholder="Drop new image here":><br>';
+                //echo '<input type="text" name="wmark" value="" placeholder="Drop new image here":><br>';
             ?>
             FB Post
             <?php
                 if ($fb_post==0){
-                    echo '<input type="checkbox" name="facebook" value="true"><br>';                    
+                    echo '<input type="checkbox" name="facebook" value="true"><br>';
                 } else {
-                    echo '<input type="checkbox" name="facebook" value="true" checked><br>';                    
+                    echo '<input type="checkbox" name="facebook" value="true" checked><br>';
                 }
             ?>
             <input type="submit" value="Ok">

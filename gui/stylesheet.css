@@ -2,28 +2,32 @@ html {
     text-align: center;
 }
 body {
-    background-color: royalblue;
+    background-color: black;
+    color: GoldenRod;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 120%;
 }
 h1 {
-    color: whitesmoke;
-    font-family: verdana;    
+    color: GoldenRod;
+    font-family: 'Source Code Pro', monospace;
     font-size: 200%;
 }
 p {
     color: red;
 }
 input[type=text] {
-    width: 140px;
+    width: 250px;
     padding: 6px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    background-color: darkslateblue;
+    background-color: DimGrey;
     color: aliceblue;
+    font-family: 'Source Code Pro', monospace;
 }
 input[type=text]:focus {
-    border: 4px solid yellow;
+    border: 4px solid LightSteelBlue;
 }
 input[type=checkbox] {
     padding: 8px;
