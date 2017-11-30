@@ -14,9 +14,9 @@ $mail = new PHPMailer(true);// Passing `true` enables exceptions
 $username='soporte.gif360@gmail.com';
 $pswd=base64_decode('WjJsbU16WXc=');
 $recipient='antonio.credoz@gmail.com';
-$m_attch='/home/onikom/Pictures/nov29_1717_48.mp4';
-$v_url='http://socialevent.mx/gif/uploads/360/nov29_1717_48.mp4';
-$img_url='http://socialevent.mx/gif/uploads/360/nov29_1717_48.gif';
+$m_attch='/home/onikom/Pictures/nov29_1856_33.mp4';
+$v_url='http://socialevent.mx/gif/uploads/360/nov29_1856_33.mp4';
+$img_url='http://socialevent.mx/gif/uploads/360/nov29_1856_33.gif';
 
 $email_msg = <<< SHACA
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
