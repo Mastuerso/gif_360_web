@@ -1,5 +1,5 @@
 html {
-    text-align: right;
+    text-align: center;
 }
 body {
     background-color: black;
@@ -44,4 +44,8 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background-color: GoldenRod;
+}
+button {
+  background-color: black;
+  border: none;
 }
