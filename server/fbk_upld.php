@@ -93,5 +93,6 @@ $graphNode = $response->getGraphNode();
 var_dump($graphNode);
 
 echo 'Video ID: ' . $graphNode['id'];
+echo "\r\n";
 
 ?>
