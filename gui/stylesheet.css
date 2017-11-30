@@ -1,5 +1,5 @@
 html {
-    text-align: center;
+    text-align: right;
 }
 body {
     background-color: black;
@@ -36,4 +36,12 @@ input[type=checkbox] {
 input[type=submit] {
     padding: 2px;
     margin: 8px;
+    color: black;
+    width: 40px;
+    background-color: DimGrey;
+    cursor: pointer;
+    border: none;
+}
+input[type=submit]:hover {
+    background-color: GoldenRod;
 }

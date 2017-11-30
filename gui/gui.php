@@ -92,20 +92,12 @@
     </head>
     <body>
         <form action="gui_data.php" method="post">
-            Freeze:
-            <?php
-                if ($freeze==0){
-                    echo '<input type="checkbox" name="freeze" value="true"><br>';
-                    echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
-                } else {
-                    echo '<input type="checkbox" name="freeze" value="true" checked><br>';
-                }
-                //echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
-            ?>
-            <!--Delay: -->
-            <input type="text" name="delay" value="<?=$delay?>" placeholder="FPS":><br>
             <!--Quality(%): -->
+            Quality?
             <input type="text" name="quality" value="<?=$quality?>" placeholder=Quality(%):><br>
+            <!--Delay: -->
+            FPS?
+            <input type="text" name="delay" value="<?=$delay?>" placeholder="Frames Per Second":><br>
             <!--
             Loop the gif:
             <?php
@@ -132,6 +124,14 @@
 
             ?>
             -->
+            FB Post
+            <?php
+                if ($fb_post==0){
+                    echo '<input type="checkbox" name="facebook" value="true">';
+                } else {
+                    echo '<input type="checkbox" name="facebook" value="true" checked>';
+                }
+            ?>
             Email:
             <?php
                 if ($email==0){
@@ -140,6 +140,16 @@
                     echo '<input type="checkbox" name="email" value="true" checked><br>';
                 }
                 echo '<input type="text" name="mailto" value="'.$mailto.'" placeholder="username@example.com":><br>';
+            ?>
+            Freeze:
+            <?php
+                if ($freeze==0){
+                    echo '<input type="checkbox" name="freeze" value="true"><br>';
+                    echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
+                } else {
+                    echo '<input type="checkbox" name="freeze" value="true" checked>';
+                }
+                //echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
             ?>
             Watermark
             <?php
@@ -154,14 +164,6 @@
                     echo '<input type="hidden" name="oldwmark" value="'.$wmark.'":>';
                 }
                 //echo '<input type="text" name="wmark" value="" placeholder="Drop new image here":><br>';
-            ?>
-            FB Post
-            <?php
-                if ($fb_post==0){
-                    echo '<input type="checkbox" name="facebook" value="true"><br>';
-                } else {
-                    echo '<input type="checkbox" name="facebook" value="true" checked><br>';
-                }
             ?>
             <input type="submit" value="Ok">
         </form>

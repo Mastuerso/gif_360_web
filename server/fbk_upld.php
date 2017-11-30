@@ -4,10 +4,10 @@
 require_once '/var/www/html/vendor/autoload.php'; // change path as needed
 
 
-$link_gif="http://socialevent.mx/gif/uploads/360/nov29_1848_41.mp4";
-$message_gif="nov29_1848_41.mp4";
+$link_gif="http://socialevent.mx/gif/uploads/360/nov29_1848_41.gif";
+$message_gif="nov29_1848_41.gif";
 
-$access_token="EAAcZCKRY8rLwBAJXhhtiamyLsTBNUAdWyhO4v7wwCZC9tE7OTYBWHjgP77ijwFqcyJxiOEQbMbgOFqMVToNRiwwhCu7d8SqueGQZCrnwnX6cHLphQBfG2OsQokeZAEeUyh4BniimoQW2d2joFuGx9nZCEfxGXC3GsNQ57Q4Uj9zyDWJ45rZCZCWUPvZBMJ8xhtUZD";
+$access_token="EAAcZCKRY8rLwBAPWOZA7ZCq1xAHnfNTBfHVZBKhuD4mxNmTz5mIacsk8YsVBgQGZCCQGd1U5m7mbZC7eX57TaMaSJ5YOkqSZBIXLnf0gj5azshZCOGKG2LEkvZCV2YMZBl8XlJBtgUI55v7p4kuquwDDZAZC6q7qZBYqooa2WWfpFYTZCZAu7hOPAs1yAp6ci53nMbR71gZD";
 #$access_token="EAAcZCKRY8rLwBAF7wWZCLnxMiIDZBBBYQZBxxLDyvF6CzHpELll7gm72YfXQw1HgfuUuNizxles5ZAuTo4x5uVqksB6EJVnZAstL5laZBzV80k4evx923cLfFtjMa7ZBHOcH6EYLdD9L5dlw2hCcFRWyvY7Yqhz9jv4kXagZC53DpjQZDZD";
 
 $fb = new \Facebook\Facebook([
