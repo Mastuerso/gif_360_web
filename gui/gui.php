@@ -85,13 +85,30 @@
 ?>
 
 <html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="toggle.js"></script>
+
     <head>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="stylesheet.css" >
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     </head>
     <body>
+      <div id="wrapperHeader">
+        <div id="header">
+          <img src="assets/logo-movil.png" alt="logo" />
+        </div>
+      </div>
+      <br>
+
+
         <form action="gui_data.php" method="post">
+
+          <!--
+          <img id="pic" src="assets/FREEZE-ON.png" name="freeze" value="true" onclick="test()"/>
+        -->
+
+
             <!--Quality(%): -->
             Quality?
             <input type="text" name="quality" value="<?=$quality?>" placeholder=Quality(%):><br>
@@ -127,9 +144,9 @@
             FB Post
             <?php
                 if ($fb_post==0){
-                    echo '<input type="checkbox" name="facebook" value="true">';
+                    echo '<input type="checkbox" name="facebook" value="true"><label for="thing"></label>';
                 } else {
-                    echo '<input type="checkbox" name="facebook" value="true" checked>';
+                    echo '<input type="checkbox" name="facebook" value="true" checked><label for="thing"></label>';
                 }
             ?>
             Email:
@@ -138,13 +155,13 @@
                     echo '<input type="checkbox" name="email" value="true"><br>';
                 } else {
                     echo '<input type="checkbox" name="email" value="true" checked><br>';
+                    echo '<input type="text" name="mailto" value="'.$mailto.'" placeholder="username@example.com":><br>';
                 }
-                echo '<input type="text" name="mailto" value="'.$mailto.'" placeholder="username@example.com":><br>';
             ?>
             Freeze:
             <?php
                 if ($freeze==0){
-                    echo '<input type="checkbox" name="freeze" value="true"><br>';
+                    echo '<input type="checkbox" name="freeze" value="true">';
                     echo '<input type="text" name="cam_delay" value="'.$cam_delay.'" placeholder="Delay between cameras":><br>';
                 } else {
                     echo '<input type="checkbox" name="freeze" value="true" checked>';
@@ -164,6 +181,7 @@
                     echo '<input type="hidden" name="oldwmark" value="'.$wmark.'":>';
                 }
                 //echo '<input type="text" name="wmark" value="" placeholder="Drop new image here":><br>';
+                //echo '<input type="checkbox" name="thing" value="valuable" id="thing"/><label for="thing"></label>';
             ?>
             <input type="submit" value="Ok">
         </form>
