@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Checkbox</title>
+	<style>
+  input[type=checkbox]{
+      display:none;
+  }
+  input[type=checkbox] + label{
+      height: 40px;
+          width: 42px;
+  }
+  body:not(#foo) input[type=checkbox]:checked + label{
+      background-image: url("images/button-settings-normal.png");
+  }
+
+  body:not(#foo) input[type=checkbox] + label{
+      background-position:0 -46px; /* as per your requirement*/
+      height: 40px;
+  }
+	</style>
+</head>
+
+<body>
+
+  <input type='checkbox' name='thing' value='valuable' id="thing"/><label for="thing"></label>
+
+</body>
+</html>
