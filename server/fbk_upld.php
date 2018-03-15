@@ -2,68 +2,25 @@
 <?php
 //require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
 require_once '/var/www/html/vendor/autoload.php'; // change path as needed
+include_once '/var/www/html/gif_360_web/gui/txtParser.php'; //location of txt parser
 
+echo "\n================POSTING ON FACEBOOK================\n";
 
-$link_gif="http://socialevent.mx/gif/uploads/360/";
-$message_gif="someone@domain.co";
-$video_dir="/home/onikom/gif_360/main/gifs/nov28_1931_36/nov29_1855_46.mp4";
+$minidir=$argv[1];
+$file=$minidir . "/gif_settings.txt";
+$values=parse_txt($file);
 
-$access_token="EAAcZCKRY8rLwBAPWOZA7ZCq1xAHnfNTBfHVZBKhuD4mxNmTz5mIacsk8YsVBgQGZCCQGd1U5m7mbZC7eX57TaMaSJ5YOkqSZBIXLnf0gj5azshZCOGKG2LEkvZCV2YMZBl8XlJBtgUI55v7p4kuquwDDZAZC6q7qZBYqooa2WWfpFYTZCZAu7hOPAs1yAp6ci53nMbR71gZD";
-#$access_token="EAAcZCKRY8rLwBAF7wWZCLnxMiIDZBBBYQZBxxLDyvF6CzHpELll7gm72YfXQw1HgfuUuNizxles5ZAuTo4x5uVqksB6EJVnZAstL5laZBzV80k4evx923cLfFtjMa7ZBHOcH6EYLdD9L5dlw2hCcFRWyvY7Yqhz9jv4kXagZC53DpjQZDZD";
+$message_gif=$values["fb_message"];
 
-$fb = new \Facebook\Facebook([
-    'app_id' => '2039770536258748',
-    'app_secret' => '05d78cbac9249efb43938f6e886b0251',
-    'default_graph_version' => 'v2.10',
-    //'default_access_token' => '{access-token}', // optional
-]);
+$files=array_diff(scandir($minidir), array('..', '.'));
 
-// Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
-//   $helper = $fb->getRedirectLoginHelper();
-//   $helper = $fb->getJavaScriptHelper();
-//   $helper = $fb->getCanvasHelper();
-//   $helper = $fb->getPageTabHelper();
+foreach ($files as $filename) {
+    if ( strstr($filename, '.mp4') ) $video_dir=$minidir . "/" . $filename;
+}
 
-//try {
-//    // Get the \Facebook\GraphNodes\GraphUser object for the current user.
-//    // If you provided a 'default_access_token', the '{access-token}' is optional.
-//    // Replace access token after 60 days from now Nov 1 2017
-//    $response = $fb->get('/me', $access_token);
-//} catch(\Facebook\Exceptions\FacebookResponseException $e) {
-//    // When Graph returns an error
-//    echo 'Graph returned an error: ' . $e->getMessage();
-//    exit;
-//} catch(\Facebook\Exceptions\FacebookSDKException $e) {
-//    // When validation fails or other local issues
-//    echo 'Facebook SDK returned an error: ' . $e->getMessage();
-//    exit;
-//}
-//
-//try {
-//    // Returns a `FacebookFacebookResponse` object
-//    $post_gif = $fb->post(
-//        '/me/feed',
-//        array (
-//            'link' => $link_gif,
-//            'message' => $message_gif
-//        ),
-//        $access_token
-//    );
-//} catch(FacebookExceptionsFacebookResponseException $e) {
-//    echo 'Graph returned an error: ' . $e->getMessage();
-//    exit;
-//} catch(FacebookExceptionsFacebookSDKException $e) {
-//    echo 'Facebook SDK returned an error: ' . $e->getMessage();
-//    exit;
-//}
-//
-//
-//$me = $response->getGraphUser();
-////echo 'Logged in as ' . $me->getName();
-//echo $message_gif.' posted on fbk';
-//echo "\r\n";
+$access_token="EAAcZCKRY8rLwBAGGQZATSiD0YnOaVC4WiHBxyBEtcfZCpKU07XdQD73OcLZAFZCmnyxFEDIyAkDIe9c1eAiB1pxxyYxkZBW2ZCylIMDSpqR3gOk9VROX9KlPgUZCvnLOJUVZCFUZCFuMVYi8rpdPYgayi2El1uALUXuIpM2cKCFyoNrwZDZD";
 
-//==================VIDEO UPLOAD
+//==================VIDEO UPLOAD==================
 
 $fb = new Facebook\Facebook([
   'app_id' => '2039770536258748',
