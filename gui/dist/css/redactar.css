@@ -1,0 +1,425 @@
+
+.panel{
+	background-color: transparent;
+}
+.flotante{
+  font-size: 17px;
+  /*transition:.5s; */ 
+}
+.botones{
+   width:25px;
+  height:25px;
+  border-radius:100%;
+  background:#D20000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.ver{
+   width:25px;
+  height:25px;
+  border-radius:100%;
+  background:#D20000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.verM{
+   width:25px;
+  height:25px;
+  border-radius:100%;
+  background:#D20000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.activar{
+   width:25px;
+  height:25px;
+  margin-left: 30px;
+  margin-top:15px;
+  border-radius:100%;
+  background:#D20000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+
+.verTicket {
+   width: 45px;
+    height: 10px;
+    background-image: url(../../images/nar/8_select.png);
+    background-color: transparent;
+    border: none;
+}
+
+.editarGafete{
+      width: 27px;
+    height: 10px;
+    background-image: url(../../images/ros/9_edit.png);
+    background-color: transparent;
+    border: none;
+}
+
+.aprobarTicket {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../images/btn_aceptar.png);
+}
+.rechazarTicket {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../images/btn_rechazar.png);
+}
+.editar{
+   width:25px;
+  height:25px;
+  margin-left: 30px;
+  margin-top:15px; 
+  border-radius:100%;
+  background:#b40000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+
+.cabeza{
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	margin-left:0.1%; 
+	background:#404040;
+}
+.pieM{
+	position: absolute;
+	width: 95%;
+  height: 10%;
+	top: -10px
+	background:#f5f5f5;
+	border-top: 1px solid #cfcfcf;
+}
+.noimg{
+  background:none ; 
+  background-color:#fff;
+ 
+  margin-top: 10px;  
+}
+#confirma{
+	font-size: 12px;
+	font-family: arial;
+
+}
+
+.img-avatar {
+    background-color: #9A9A9A;
+    max-width: 50px;
+    border-radius: 10%;
+    border: 1px solid;
+    border-color: #fff;
+    margin-left: 38%;
+}
+
+.message{
+  float:left;
+  width: 100%;
+  min-height: 55px;
+  outline: none;
+  resize: none;
+  border: 1px solid #f0f0f0;
+}
+
+
+.tituloCliente {  
+	color: White;
+    background-color: #7A7A7A;
+	align-content: center;
+}
+
+#tablaCliente th a {
+    color: #ffffff;
+}
+
+#tituloDetalleCliente{
+	background-color: #DB2323;
+	color: #ffffff;
+}
+
+#tituloResumenRegistro{
+	background-color: #D90A65;
+	color: #ffffff;
+}
+
+#tituloInsertarNuevo{
+	background-color: #EC8528;
+	color: #ffffff;
+}
+
+.tituloInsertarNuevo{
+	 background-color: rgba(30, 83, 91,1) !important;
+	color: #ffffff !important;
+}
+
+
+#tituloGafetesIncluido{
+	background-color: #7A2560;
+	color: #ffffff;
+}
+
+#tituloGafetesAdicional{
+	background-color: #6DA22E;
+	color: #ffffff;
+}
+
+#tituloGafetesParticipante{
+	background-color: #007E94;
+	color: #ffffff;
+}
+
+#tituloGafetesDelegado{
+	background-color: #007E94;
+	color: #ffffff;
+}
+
+#tituloGafetesStaff{
+	background-color: #D90A65;
+	color: #ffffff;
+}
+
+
+
+.textoCentrado{
+	text-align: center;
+}
+
+.page{
+	max-width: 1200px;
+    margin: auto;
+}
+.textoDerecha{
+	text-align: right;
+}
+
+
+#numeroCompania{
+        text-align: center;
+    font-size: 1.5em;
+    /* color: #DB2323; */
+    font-weight: bold;
+}
+#divNombreCompania{
+        text-align: center;
+    font-size: 1.5em;
+    /* color: #DB2323; */
+    font-weight: bold;
+}
+
+#nombreCompania{
+        text-align: center;
+    font-size: 1.5em;
+    color: #F68804;
+    font-weight: bold;
+}
+
+
+.espacioHijo{
+	padding-left: 30px;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#headBusqueda{
+	background-color: #F68804;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#btnRegistrar{
+	    width: 198px;
+    height: 53px;
+    /*background-image: url(../../images/ros/5_boton_registrar.png);*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#btnFinalizar{
+	    width: 198px;
+    height: 53px;
+    /*background-image: url(../../images/ros/6_boton_finalizar.png);*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.labelCompania{
+	font-size: 1.5em;
+    color: #F68804;
+    padding: 5px;
+    text-align: center;
+}
+
+.seleccionarTodos{
+	  width: 198px;
+    height: 53px;
+    /*background-image: url(../../images/ros/14_boton_seleccionartodo.png);*/
+    background-color: transparent;
+    border: none;
+     cursor: pointer;
+}
+.gafetesEntregados{
+	  width: 198px;
+    height: 53px;
+    /*background-image: url(../../images/ros/15_boton_gafetesentregados.png);*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.gafetesPagados{
+	       display: inline-block;
+    padding: 9px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(150,2,89,1);
+}
+
+.gafeteNoEntregado{
+	  width: 198px;
+    height: 53px;
+    /*background-image: url(../../images/ros/16_boton_gafetes_noentregados.png);*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btnGuardarObs{
+	  width: 198px;
+    height: 53px;
+    /*background-image: url(../../images/ros/20_boton_guardar.png);*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+    
+#cerrarSesion{
+	    margin-top: 20px;
+}
+
+.btnRegistrar{
+      width: 198px;
+    height: 53px;
+    background-color: rgba(30, 83, 91,1);
+   border: none;
+    color: #fff;
+font-family: arial;
+font-size: 22px;
+}
+#btn_rgis{
+      width: 198px;
+    height: 53px;
+    background-color: rgba(30, 83 ,91,1);
+    border: none;
+    color: #fff;
+font-family: arial;
+font-size: 22px;
+}
+.respuestaVip{
+  display: none;
+  font-size: 2.2em;
+  color: crimson;
+}

@@ -1,0 +1,333 @@
+
+.contenedor{
+  width:90px;
+  height:240px;
+  position:absolute;
+  right:300px;
+  bottom:90px;
+}
+.botonF1{
+  width:35px;
+  height:35px;
+  border-radius:100%;
+  background:#b40000;
+  right:0;
+  bottom:-20%;
+  position:absolute;
+  
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+}
+.flotante{
+  font-size: 17px;
+  /*transition:.5s; */ 
+}
+.botonF1:hover span{
+  transform:rotate(360deg);
+}
+.botonF2:hover span{
+  transform:rotate(360deg);
+}
+.botonF1:active{
+  transform:scale(1.1);
+}
+.botonF2:active{
+  transform:scale(1.1);
+}
+.btn2{
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  border:none;
+  color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size:28px;
+  outline:none;
+  position:absolute;
+  right:0;
+  bottom:0;
+  margin-right:26px;
+  transform:scale(0);
+}
+.botonF2{
+   width:35px;
+  height:35px;
+  border-radius:100%;
+  background:#ff0000;
+  right:-100%;
+  bottom:-55%;
+  position:absolute;
+
+  border:none;
+  outline:none;
+  color:#fff;
+  font-size:25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.botones{
+   width:25px;
+  height:25px;
+  border-radius:100%;
+  background:#D20000;
+  border:none;
+  outline:none;
+  margin-top: -10px;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.activar{
+   width:25px;
+  height:25px;
+  margin-left: 30px;
+  margin-top:15px;
+  border-radius:100%;
+  background:#D20000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+
+.activarTicket{
+   width:25px;
+  height:25px;
+  margin-left: 30px;
+  margin-top:15px;
+  border-radius: 8px;
+  background:gray;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+
+.rechazarTicket {
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background:gray;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: .3s;
+}
+
+.editar{
+   width:25px;
+  height:25px;
+  margin-left: 30px;
+  margin-top:15px; 
+  border-radius:100%;
+  background:#b40000;
+  border:none;
+  outline:none;
+  text-align: center;
+  color:#FFF;
+  font-size:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.botonF3{
+   width:40px;
+  height:40px;
+  border-radius:100%;
+  border:none;
+  color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size:28px;
+  outline:none;
+  position:absolute;
+  right:100%;
+  bottom:0;
+  margin-right:26px;
+  transform:scale(0);
+}
+.botonF4{
+   width:35px;
+  height:35px;
+  border-radius:100%;
+  background:#ff0000;
+  right:500%;
+  bottom:-20%;
+  position:absolute;
+
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s; 
+}
+.botonF5{
+  background:#FF5722;
+  margin-bottom:220px;
+  transition:0.99s;
+}
+.animacionVer{
+  transform:scale(1);
+}
+.img-avatar {
+    background-color: #9A9A9A;
+    max-width: 50px;
+    border-radius: 10%;
+    border: 1px solid;
+    border-color: #fff;
+    margin-left: 3%;
+}
+#usuarios{
+/*estilo de el cuerpo de nuestra tabla*/
+background-color: #1e8cbe;
+width:80%;
+margin:24px auto;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+font-family:helvetica,arial,sans-serif;
+font-weight:normal;
+text-transform: uppercase;
+}
+
+.sucursales1 th{
+/*estilo de los elementos(th)*/
+/*background-color: #fff;*/
+color:#fff;
+font-weight: normal;
+font-size:14px;
+padding: 8px;
+}
+
+.sucursales1 td{
+
+/*estilo a los elementos (td)*/
+align-content: left;
+width:100px;
+height: 24px;
+}
+
+.noimg{
+  background:none ; 
+  background-color:#fff;
+ 
+  margin-top: 10px;  
+}
+
+.card {
+    /*background-color: #F7F7F7;*/
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 20px;
+    /* shadows and rounded borders */
+    /*-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);*/
+}
+.btn {
+    font-weight: 700;
+    /*height: 36px;*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    color: #fff !important;
+    background-color: #666666;
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+    font-family: arial;
+}
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: #ff0033 ;
+}
+.card-container.card {
+    max-width: 450px;
+    padding: 40px 40px;
+}
+.sucursales1 tr:nth-child(odd){
+
+/*para los colores de las filas impares*/
+background-color: #DEDEDE;
+}
+.activar1{
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 100%;
+    background: #D20000;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: .3s;
+}
+.rfcSelect{
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 100%;
+    background: #D20000;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: .3s;
+}
+.sucursales1 tr:nth-child(even){
+
+/*para los colores de las filas pares*/
+background:#f0f0f0;
+}
+
+.iconoCirculo{
+    border-color: gray;
+    width: 15px;
+    height: 15px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 8px;
+}
+    

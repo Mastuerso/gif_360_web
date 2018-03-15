@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	
+ 	<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+ 	<script src="dist/js/CosumoServicios/jquery.dynatable.js"></script>
+ 	 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+ 	 <link rel="stylesheet" href="dist/js/CosumoServicios/jquery.dynatable.css">
+ 	 <script type="text/javascript">
+ 		$(document).ready(function() {
+			  var r=[
+			      {diff: 'diff-1', promo_key: 'promo_key-1', promo: 'promo-1', upc: 'upc-1', upc_text: 'upc_text-1', anchor_id: 'anchor_id-1', anchor: 'anchor-1'},
+			      {diff: 'diff-2', promo_key: 'promo_key-2', promo: 'promo-2', upc: 'upc-2', upc_text: 'upc_text-2', anchor_id: 'anchor_id-2', anchor: 'anchor-2'}
+			  ];
+			  $('#dynatable').dynatable({dataset: {records: r}});
+		});
+ 	</script>
+ 	<style type="text/css">
+		th a {
+		  color: #444;
+		}
+		th a:hover {
+		  color: #444;
+		}
+
+ 	</style>
+ </head>
+ <body>
+ <table id='statitable' class="statitable table table-condensed table-hover table-striped table-bordered">
+  <thead>
+    <tr>
+      <th colspan="2" data-dynatable-ignore='true'>Promotional Event</th>
+      <th colspan="2" data-dynatable-ignore='true'>UPC</th>
+      <th colspan="2" data-dynatable-ignore='true'>Anchor Group</th>
+      <th rowspan="2" data-dynatable-column="diff">Difference</th>
+    </tr>
+    <tr>
+      <th data-dynatable-column="promo_key">Key</th>
+      <th data-dynatable-column="promo">Description</th>
+
+      <th data-dynatable-column="upc">Code</th>
+      <th data-dynatable-column="upc_text">Description</th>        
+        
+      <th data-dynatable-column="anchor_id">ID</th>
+      <th data-dynatable-column="anchor">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Promo Key 1</td>
+      <td>Promo Description 1</td>
+      <td>UPC Code 1</td>
+      <td>UPC Description 1</td>        
+      <td>AG ID 1</td>
+      <td>AG Description 1</td>
+      <td>Difference 1</td>
+    </tr>
+    <tr>
+      <td>Promo Key 2</td>
+      <td>Promo Description 2</td>
+      <td>UPC Code 2</td>
+      <td>UPC Description 2</td>        
+      <td>AG ID 2</td>
+      <td>AG Description 2</td>
+      <td>Difference 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table id='dynatable' class="dynatable table table-condensed table-hover table-striped table-bordered">
+  <thead>
+    <tr>
+      <th colspan="2" data-dynatable-ignore='true'>Promotional Event</th>
+      <th colspan="2" data-dynatable-ignore='true'>UPC</th>
+      <th colspan="2" data-dynatable-ignore='true'>Anchor Group</th>
+      <th rowspan="2" data-dynatable-column="diff">Difference</th>
+    </tr>
+    <tr>
+      <th data-dynatable-column="promo_key">Key</th>
+      <th data-dynatable-column="promo">Description</th>
+
+      <th data-dynatable-column="upc">Code</th>
+      <th data-dynatable-column="upc_text">Description</th>        
+        
+      <th data-dynatable-column="anchor_id">ID</th>
+      <th data-dynatable-column="anchor">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+ </body>
+ </html>
