@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="553697957501-f8f7guenos7hnos83mopsklu914tph22.apps.googleusercontent.com">
+<script src="Elavon%20Admistrador_files/platform.js" async="" defer="defer" gapi_processed="true"></script>
+
+  <script src="Elavon%20Admistrador_files/jquery-2.js"></script>
+  <script src="Elavon%20Admistrador_files/jquery_005.js"></script>
+
+<script src="Elavon%20Admistrador_files/jquery_002.js"></script>
+<script src="Elavon%20Admistrador_files/modernizr-custom.js"></script>
+
+<!-- polyfiller file to detect and load polyfills -->
+<script src="Elavon%20Admistrador_files/polyfiller.js"></script>
+<script src="Elavon%20Admistrador_files/jquery.js"></script>
+<script src="Elavon%20Admistrador_files/dataTables.js"></script>
+
+<!-- jQuery UI 1.11.4 -->
+<script src="Elavon%20Admistrador_files/jquery-ui.js"></script>
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="Elavon%20Admistrador_files/bootstrap.js"></script>
+<!-- Morris.js charts -->
+<script src="Elavon%20Admistrador_files/raphael-min.js"></script>
+<!-- Sparkline -->
+<script src="Elavon%20Admistrador_files/jquery_004.js"></script>
+<!-- jvectormap -->
+<script src="Elavon%20Admistrador_files/jquery-jvectormap-1.js"></script>
+<script src="Elavon%20Admistrador_files/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="Elavon%20Admistrador_files/jquery_003.js"></script>
+<!-- daterangepicker -->
+<script src="Elavon%20Admistrador_files/moment.js"></script>
+<script src="Elavon%20Admistrador_files/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="Elavon%20Admistrador_files/bootstrap-datepicker.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="Elavon%20Admistrador_files/bootstrap3-wysihtml5.js"></script>
+<!-- Slimscroll -->
+<script src="Elavon%20Admistrador_files/jquery_006.js"></script>
+<!-- FastClick -->
+<script src="Elavon%20Admistrador_files/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="Elavon%20Admistrador_files/app.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="Elavon%20Admistrador_files/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="Elavon%20Admistrador_files/demo.js"></script>
+<script src="Elavon%20Admistrador_files/bootstrap-paginator.js"></script>
+<!-- ConsumoServicios -->
+<script src="Elavon%20Admistrador_files/redactar.js"></script><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head><body class="skin-blue sidebar-mini">s
+<script src="Elavon%20Admistrador_files/ServiciosGraficas_A.js"></script>
+<script src="Elavon%20Admistrador_files/permisos.js"></script>
+<!-- Chart.js-->
+<script src="Elavon%20Admistrador_files/Chart.js"></script>
+
+
+  <title>Elavon Admistrador</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/bootstrap.css">
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/jquery.css">
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/dataTables.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/font-awesome.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/ionicons.css">
+   
+  <!-- Theme style -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/AdminLTE.css">
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/permisos.css">
+   <link rel="stylesheet" href="Elavon%20Admistrador_files/redactar.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/_all-skins.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/blue.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/jquery-jvectormap-1.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/datepicker3.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="Elavon%20Admistrador_files/bootstrap3-wysihtml5.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+<div class="wrapper">
+<!--encabezado-->
+  <header class="main-header">
+   
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+   
+      <div class="rutas">
+       Permisos 
+      </div>
+    <div class="stilo">  
+    <img src="Elavon%20Admistrador_files/ruta.png" width="15%" height="50px">
+    </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <!--Menu Lateral-->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="Elavon%20Admistrador_files/user.png" class="img-circle" alt="User Image">
+        </div><br><br><br><br><br>
+        <div class="pull-left info">
+          <p id="name">Florencio Flores</p>
+          
+        </div><br><br>
+      </div>
+      <!-- search form -->
+     <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input name="q" class="form-control" id="busqueda" type="text">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+       <div class="contagregado">
+       <table id="sucurBuscar" class="display" "="" width="100%" cellspacing="0">
+         <thead>                                  
+          </thead>
+          <tbody>
+            
+          </tbody>
+       </table>
+     </div>
+      <div class="conbusqueda">
+       <table id="sucursales" class="display" "="" width="100%" cellspacing="0">
+         <thead>                                  
+          </thead>
+          <tbody>
+            
+          </tbody>
+       </table>
+     </div>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+       <li class="treeview" id="Grafi">
+           <div class="princi">
+          <img src="Elavon%20Admistrador_files/b_principal.png" width="100%" height="60px">
+         </div>
+        <a href="#" onclick="mostrarnotifi();">
+
+            <span class="m">Redactar Notificacion</span>
+            <span class="pull-right-container">
+              <span class="pull-left"></span>
+            </span>
+           </a>
+          
+        </li>
+        <li class="treeview" id="Grafi">
+           <div class="princi">
+          <img src="Elavon%20Admistrador_files/b_principal.png" width="100%" height="60px">
+         </div>
+        <a href="#" onclick="mostrarMensaje();">
+
+            <span class="m">Redactar Mensajes</span>
+            <span class="pull-right-container">
+              <span class="pull-left"></span>
+            </span>
+           </a>
+          
+        </li>
+        <li class="treeview">
+           <div class="princi">
+          <img src="Elavon%20Admistrador_files/b_principal.png" width="100%" height="60px">
+         </div>
+        <a href="#" onclick="getUsersAll();">
+            
+            
+         
+          
+            
+            <span class="m">Administrar Usuarios</span>
+            <div class="users">
+            <span class="pull-right-container">
+              <span class=""><img src="Elavon%20Admistrador_files/users.png" width="100%" height="45%"></span>
+            </span>
+            </div>
+           </a>
+          
+        </li>
+         <li class="treeview">
+           <div class="princi">
+          <img src="Elavon%20Admistrador_files/b_principal.png" width="100%" height="60px">
+         </div>
+        <a href="#" onclick="getUsersnoActivos();">
+            
+            
+         
+          
+            
+            <span class="m">Activar Usuarios</span>
+            <div class="users">
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="Elavon%20Admistrador_files/users.png" width="100%" height="45%"></span>
+            </span>
+            </div>
+           </a>
+          
+        </li>
+        <li class="treeview">
+           <div class="princi">
+          <img src="Elavon%20Admistrador_files/b_principal.png" width="100%" height="60px">
+         </div>
+        <a href="http://localhost/elavonadmin/principal_A.html">
+            
+            
+         
+          
+            
+            <span class="m">Principal</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="Elavon%20Admistrador_files/b_menu_principal.png" width="45%" height="45%"></span>
+            </span>
+           </a>
+          
+        </li>
+        <!--li class="treeview">
+        <div class="trans">
+        <img src="images/b_transacciones.png" width="100%" height="60px">
+         </div>
+          <a href="#"  >
+            
+            <span class='m'>Transacciones</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="images/b_manu_transacciones.png" width="45%" height="45%"></span>
+            </span>
+          </a>
+         
+        </li>
+
+         <li class="treeview">
+          <div class="ventas">
+        <img src="images/b_costos.png" width="100%" height="60px">
+         </div>
+          <a href="#">
+            
+            <span class='m'>Ventas</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="images/b_menu_ventas.png" width="45%" height="45%"></span>
+            </span>
+          </a>
+          
+        </li>
+         <li class="treeview">
+          <div class="proyec">
+        <img src="images/b_ventas.png" width="100%" height="60px">
+         </div>
+          <a href="#">
+            
+            <span class='m'>Proyecciones</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="images/b_menu_proyecciones.png" width="45%" height="45%"></span>
+            </span>
+          </a>
+        </li-->
+        <li class="treeview">
+        <div class="proyec">
+        <img src="Elavon%20Admistrador_files/b_proyecciones.png" width="100%" height="60px">
+         </div>
+            <a href="http://localhost/elavonadmin/NovedadesyMensajes.html">
+              
+              <span class="m">Novedades y Mensajes</span>
+              <span class="pull-right-container">
+                <span class="pull-left"><img src="Elavon%20Admistrador_files/b-menu_novymensajes.png" width="45%" height="45%"></span>
+              </span>
+            </a>
+        </li>
+        <!--li class="treeview">
+        <div class="proyec">
+        <img src="images/b_novedadesymen.png" width="100%" height="60px">
+         </div>
+          <a href="#">
+            
+            <span class='m'>Configuracion</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="images/b_menu_configuracion.png" width="45%" height="45%"></span>
+            </span>
+          </a>
+          
+        </li>
+        <li class="treeview">
+        <div class="proyec">
+        <img src="images/b_configuracion.png" width="100%" height="60px">
+         </div>
+          <a href="#">
+            
+            <span class='m'>Terminos y Condiciones</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="images/b-menu_termycondiciones.png" width="45%" height="45%"></span>
+            </span>
+          </a>
+          
+        </li-->
+       <li class="treeview">
+        <div class="proyec">
+        <img src="Elavon%20Admistrador_files/b_terminosycond.png" width="100%" height="70px">
+         </div>
+         <br>
+          <a href="#" onclick="cerrarsesion();">
+            
+            <span class="m">Cerrar sesion</span>
+            <span class="pull-right-container">
+              <span class="pull-left"><img src="Elavon%20Admistrador_files/logout.png" width="45%" height="45%"></span>
+            </span>
+          </a>
+          <br>
+          <br>
+        </li>
+
+<!--aqui Termina el Menu-->  
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 822px;">
+    <!-- Content Header (Page header) -->
+   
+
+    <!-- Main content -->
+      <div class="row">
+        <!-- Left col -->
+        <br>
+        <br>
+
+        <div class="col-lg-12 redacta" style="display: none;">
+          <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <div class="panel panel-default">
+                <div class="panel-heading "><span class="N">Nuevo Mensaje</span>
+
+                </div>
+                <div class="panel-body">
+                 <div class="panel-heading"></div>
+                  <div class="canvas-wrapper">
+                     
+
+                     <div class="row">
+                     <div class="col-lg-2"><span>para:</span></div>
+                       <div class="col-lg-9">
+                       
+                        <input id="destina" class="form-control noimg nombreclas" placeholder="Escribe o selecciona el RFC destino" required="" type="text">
+                       </div>
+                    </div>
+                    <br>
+                <div class="row">
+                  <div class="col-lg-2">
+                  <span>Descripción:</span>
+                  </div>
+                   <div class="col-lg-9">
+                    <textarea name="message" class="message" placeholder="escribe tu mensaje">                     
+                  </textarea>
+                  <label id="confirma" style="display: none;"></label>
+                   </div>
+                </div>
+                  <br><br>
+                     <div class="row">
+                    <div class="col-lg-3"><button class="btnM btn-lg btn-primary btn-block btn-signinM" type="button" onclick="insetNotificacion();">Enviar</button></div>
+                    <!--div class="col-lg-5"><span class="">cargar imagen</span></div-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        <section class="col-lg-12 connectedSortable ui-sortable">
+               
+         
+        </section>
+          
+
+        <section class="content" id="princi" style="display: none;">
+        <div class="row">
+         <div class="col-lg-2"></div>
+         <div class="col-lg-8">
+           <div class="User" id="dyna" style="display: block;">
+  
+          <div id="dynatable-processing-dynatable" class="dynatable-processing" style="position: absolute; top: 158px; left: 0px; width: 100px; height: 0px; display: none;"><span style="position: relative; top: 0px; left: 50px;">Processing...</span></div><span id="dynatable-search-dynatable" class="dynatable-search">Busca: <input id="dynatable-query-search-dynatable" class="form-control" data-dynatable-query="search" type="text"></span><table id="dynatable" class="dynatable table table-condensed table-hover table-striped table-bordered">
+              <thead>
+               
+                <tr>
+                  <th data-dynatable-column="Foto" class="dynatable-head"><a class="dynatable-sort-header" href="#">Foto</a></th>
+                  <th data-dynatable-column="Nombre" class="dynatable-head"><a class="dynatable-sort-header" href="#">Nombre de usuario</a></th>
+
+                  <th data-dynatable-column="Email" class="dynatable-head"><a class="dynatable-sort-header" href="#">Correo Electronico</a></th>
+                  <th data-dynatable-column="Estatus" class="dynatable-head"><a class="dynatable-sort-header" href="#">Estatus</a></th>
+                   <th data-dynatable-column="Accion" class="dynatable-head"><a class="dynatable-sort-header" href="#">Accion</a></th>          
+                    
+                </tr>
+              </thead>
+              <tbody>
+              <tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">sandra</td><td style="text-align: left;">sandra.guzba@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="0" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar0"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="0" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar0"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Cesar Jimenez</td><td style="text-align: left;">propietario@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="1" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar1"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="1" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar1"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Cesar Jimenez</td><td style="text-align: left;">gerente@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="2" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar2"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="2" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar2"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Cesar Jimenez</td><td style="text-align: left;">admin@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="3" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar3"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="3" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar3"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Cesar Jimenez</td><td style="text-align: left;">propietario@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="4" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar4"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="4" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar4"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Cesar Jimenez</td><td style="text-align: left;">gerente@gmail.com</td><td style="text-align: left;">Inactivo</td><td style="text-align: left;"> <button value="5" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar5"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="5" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar5"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">David</td><td style="text-align: left;">david1@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="6" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar6"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="6" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar6"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">David</td><td style="text-align: left;">david2@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="7" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar7"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="7" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar7"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Florencio Flores</td><td style="text-align: left;">flores@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="8" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar8"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="8" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar8"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr><tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Bonifacio Bonito</td><td style="text-align: left;">boni@gmail.com</td><td style="text-align: left;">Activo</td><td style="text-align: left;"> <button value="9" class="botones" data-toggle="modal" data-target="#eliminar" id="eliminar9"><span id="sta" class="sta glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></button> <button value="9" class="editar" data-toggle="modal" data-target="#actualizar" id="eliminar9"><span id="sta" class="sta glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td></tr></tbody>
+            </table><ul id="dynatable-pagination-links-dynatable" class="dynatable-pagination-links"><li><span>Paginas: </span></li><li class="dynatable-disabled-page"><a data-dynatable-page="0" class="dynatable-page-link dynatable-page-prev dynatable-disabled-page">Previo</a></li><li class="dynatable-active-page"><a data-dynatable-page="1" class="dynatable-page-link dynatable-active-page">1</a></li><li><a data-dynatable-page="2" class="dynatable-page-link">2</a></li><li><a data-dynatable-page="3" class="dynatable-page-link">3</a></li><li><span class="dynatable-page-break">…</span></li><li><a data-dynatable-page="5" class="dynatable-page-link">5</a></li><li><a data-dynatable-page="2" class="dynatable-page-link dynatable-page-next">Siguiente</a></li></ul> 
+           </div>
+            <div class="User" id="noAc" style="display: none;">
+  
+          <div id="dynatable-processing-unoActivo" class="dynatable-processing" style="position: absolute; top: 0px; left: 15px; width: 1107px; height: 33px; display: none;"><span style="position: relative; top: 6.5px; left: 513px;">Processing...</span></div><span id="dynatable-search-unoActivo" class="dynatable-search">Busca: <input id="dynatable-query-search-unoActivo" class="form-control" data-dynatable-query="search" type="text"></span><table id="unoActivo" class="dynatable table table-condensed table-hover table-striped table-bordered">
+              <thead>
+               
+                <tr>
+                  <th data-dynatable-column="Foto" class="dynatable-head"><a class="dynatable-sort-header" href="#">Foto</a></th>
+                  <th data-dynatable-column="Nombre" class="dynatable-head"><a class="dynatable-sort-header" href="#">Nombre de usuario</a></th>
+
+                  <th data-dynatable-column="Email" class="dynatable-head"><a class="dynatable-sort-header" href="#">Correo Electronico</a></th>
+                  <th data-dynatable-column="Estatus" class="dynatable-head"><a class="dynatable-sort-header" href="#">Estatus</a></th>
+                        
+                    
+                </tr>
+              </thead>
+              <tbody>
+              <tr><td style="text-align: left;"><div class="pull-left image"><img src="Elavon%20Admistrador_files/user.png" class="img-avatar" alt="User Image"></div></td><td style="text-align: left;">Orlando Garay </td><td style="text-align: left;">orlando_garay@yahoo.com</td><td style="text-align: left;"> <button value="0" class="activar" id="eliminar0"><span id="sta" class="sta glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span></button></td></tr></tbody>
+            </table><ul id="dynatable-pagination-links-unoActivo" class="dynatable-pagination-links"><li><span>Paginas: </span></li><li class="dynatable-disabled-page"><a data-dynatable-page="0" class="dynatable-page-link dynatable-page-prev dynatable-disabled-page">Previo</a></li><li class="dynatable-active-page"><a data-dynatable-page="1" class="dynatable-page-link dynatable-active-page">1</a></li><li class="dynatable-disabled-page"><a data-dynatable-page="2" class="dynatable-page-link dynatable-page-next dynatable-disabled-page">Siguiente</a></li></ul> 
+           </div>
+           
+         </div>
+         <div class="col-lg-2">
+         <div class="contenedor">
+              <!--button id='modificar' class="botonF1">
+               <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span>
+              </button-->
+              
+              <button id="agregar" class="botonF2" onclick="nuevo();" style="display: block;">
+              +
+              </button>
+           </div>
+         </div>
+        </div>
+       <div class="container" id="formulario" style="display: none;">
+   
+              <div class="card card-container">
+                  
+            
+                  <!-- /form -->
+                  <form class="form-signin">
+                    <input id="email" class="form-control noimg" placeholder="Correo electrónico" required="" autofocus="" type="email">
+
+                    <input id="nombre" class="form-control noimg" placeholder="Nombre" required="" type="text">
+                    <input id="contrasena" class="form-control noimg" placeholder="Contraseña" required="" autofocus="" type="password">
+
+                    <input id="validar" class="form-control noimg" placeholder="Validar contraseña" required="" type="password">
+                   <div id="m"> <p id="mensaje" style="display: none;">Favor de introducir contraseña valida</p></div>
+                    <input id="rfc" class="form-control noimg" placeholder="Registro Federal de Causantes (AASS810823FGD)" required="" type="text">
+                    <input id="mercahnt" class="form-control noimg" placeholder="Merchant" required="" type="text">
+
+                      <div id="remember" class="checkbox">
+                            <label>
+                                <input value="" id="todos" type="checkbox"> Todos
+                            </label>
+                        </div>
+
+                     <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" onclick="register();">Registrar</button>
+                  </form>
+              </div><!-- /card-container -->
+      </div>
+
+        </section>
+       
+      </div>
+      <!-- /.row (main row) -->
+
+    
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="">
+     <div class="define">
+
+         <a href="#" class="pie"> Conoce mas</a>
+         
+
+        </div>
+        <div class="define1">
+
+          
+         <strong> <a href="#" class="pie"> Proyecciones</a> </strong>
+
+        </div>
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 0.01
+    </div>
+    <strong>Copyright © 2016-2017 <a href="http://onikom.com.mx/">Onikom</a>.</strong> All rights
+    reserved.
+  </footer>
+ 
+</div>
+  <!-- Modal -->
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade " id="actualizar" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content ">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Actualizar datos de Usuarios </h4>
+        </div>
+        <div class="modal-body">
+         <div class="card card-container">
+                <form class="form-signin">
+                <input id="email1" class="form-control noimg emailclass" placeholder="Correo electrónico" required="" autofocus="" type="email">
+
+                <input id="nombre" class="form-control noimg nombreclas" placeholder="Nombre" required="" type="text">
+                <!--input type="password"  id="contrasena" class="form-control noimg" placeholder="Contraseña" required autofocus/-->
+
+                <input id="tipouser" class="form-control noimg tipoclass" placeholder="Tipo de usuario" required="" type="text">
+               
+                <input id="rfc" class="form-control noimg rfcclass" placeholder="Registro Federal de Causantes" required="" type="text">
+               <input id="mercahnt" class="form-control noimg merchantclass" placeholder="Merchant" required="" type="text">
+
+                    <!--div id="remember" class="checkbox">
+                          <label>
+                              <input type="checkbox" value="" id='todos'> Todos
+                          </label>
+                      </div-->
+                      <br>
+
+                  <button class="btn btn-lg btn-primary btn-block btn-signin" data-dismiss="modal" type="button" onclick="actualizar()">Actualizar</button>
+            </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade " id="eliminar" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content ">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Eliminar usuarios</h4>
+        </div>
+        <div class="modal-body">
+         <div class="card card-container">
+                <span> Esta usted seguro de eliminar a este usuario</span>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                <div class="col-lg-5">
+                  <button class="btn btn-lg btn-primary btn-block btn-signin" data-dismiss="modal" type="button" onclick="">Eliminar</button>
+                </div>
+                <div class="col-lg-5">
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" data-dismiss="modal" type="button" onclick="">Cancelar</button>
+                </div>
+                </div>
+               
+              
+            </div>
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+
+
+
+
+<div class="jvectormap-label"></div></body></html>

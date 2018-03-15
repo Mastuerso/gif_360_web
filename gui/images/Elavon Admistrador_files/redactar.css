@@ -1,0 +1,11 @@
+
+
+.message{
+  float:left;
+  width: 100%;
+  min-height: 55px;
+  outline: none;
+  resize: none;
+  border: 1px solid #f0f0f0;
+}
+
